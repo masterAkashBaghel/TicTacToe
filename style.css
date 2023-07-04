@@ -1,0 +1,138 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif' ;
+}
+
+.wrapper{
+    
+    height: 100vh;
+    width: 100vw;
+    background-image: url(gradient-bg.jpg);
+    display: grid;
+    background-position: center;
+    background-size: cover;
+
+    place-items: center;
+}
+.player-info{
+    
+    color: rgb(243, 239, 239);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 0.7rem;
+    padding: 6px 20px;
+    margin: 4px;
+}
+
+.btn{
+    position: relative;
+    color: rgb(243, 239, 239);
+    border: 1px solid rgba(255, 255, 255, 0.25);;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 0.7rem;
+    padding: 5px;
+    display: none;
+    z-index: 25;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.tic-tac-toe{
+ 
+    width:90%;
+    max-width:20rem;
+    background-color: rgba(15, 12, 12, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+    z-index: 15;
+    box-shadow: 0 0 100px #0ad5b6;
+
+    
+}
+.box1, .box2, .box4, .box5{
+    border-right:2px solid white;
+    border-bottom:2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+
+.box7, .box8{
+    border-right:2px solid white;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.win{
+    background-color: rgba(114, 213, 114, 0.567);
+}
+
+
+
+.circle1{
+    position: absolute;
+     top: 5%;
+   
+    margin-right: 70%;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    box-shadow: 0 0 100px #0ad5b6;
+    background: linear-gradient(-25deg, #d84869,#f46641);
+    animation:circleAnimate 15s infinite;
+}
+
+@keyframes circleAnimate {
+    0% {
+        transform: translateX(0) translateY(0);
+      }
+      25% {
+        transform: translateX(100%) translateY(0);
+      }
+      50% {
+        transform: translateX(100%) translateY(100%);
+      }
+     
+}
+.circle2{
+    position: fixed;
+    top: 70%;
+    left: 45%;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: aks 15s infinite;
+    z-index: 1;
+    transform: scaleX(5);
+ 
+
+}
+@keyframes aks {
+    50%{
+        bottom: 16%;
+        right: 51%;
+        scale:1.11;
+    }
+    
+}
