@@ -21,7 +21,7 @@ To run the Tic Tac Toe game locally, follow these steps:
 1. Clone the repository:
 
 ```
-git clone https://github.com/masterAkashBaghel/tic-tac-toe
+git clone https://github.com/masterAkashBaghel/TicTacToe
 ```
 
 2. Open the `index.html` file in a web browser.
