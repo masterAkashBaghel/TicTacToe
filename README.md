@@ -1,4 +1,4 @@
-Sure! Here's an example of a README file for your Tic Tac Toe game project using HTML, CSS, and JavaScript:
+ 
 
 # Tic Tac Toe Game
 
@@ -12,7 +12,7 @@ Tic Tac Toe is a classic two-player game played on a grid of 3x3 squares. Player
 
 - `index.html`: The main HTML file that contains the game board and user interface elements.
 - `style.css`: The CSS file that styles the game board and user interface.
-- `script.js`: The JavaScript file that handles the game logic and user interactions.
+- `index.js`: The JavaScript file that handles the game logic and user interactions.
 
 ## Getting Started
 
@@ -51,4 +51,4 @@ Contributions to the Tic Tac Toe game project are welcome! If you find any issue
 
 - The project was inspired by the classic Tic Tac Toe game and various online tutorials and examples.
 
-That's a basic template for a README file. Feel free to customize it further based on your specific project details and requirements.
+ 
